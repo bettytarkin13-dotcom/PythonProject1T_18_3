@@ -1,37 +1,21 @@
+num = input("Enter a number: ")
 
-'''
-Targil:
-input number from the user (must be between 1-9): 7
+reversed_num = num[::-1]
+print("Reversed:", reversed_num)
 
-1
-12
-123
-1234
-12345
-123456
-1234567
-123456
-12345
-1234
-123
-12
-1
+digits = [int(d) for d in num]
 
-**Bonus (not be in exam): 7
-   *
-  ***
- *****
-*******
+max_digit = max(digits)
+print("Max digit:", max_digit)
 
-'''
+count_max = digits.count(max_digit)
+print("Count of max digit:", count_max)
 
-k = int(input('Enter length?'))
-for i in range(1, k + 1):
-    for j in range(1, i + 1):
-        print(j, end = ' ')
-    print()
+min_digit = min(digits)
+print("Min digit:", min_digit)
 
-for i in range(k - 1, 0, -1):
-    for j in range(1, i + 1):
-        print(j, end = ' ')
-    print()
+total = sum(digits)
+print("Sum:", total)
+
+avg = total / len(digits)
+print("Average:", avg)
