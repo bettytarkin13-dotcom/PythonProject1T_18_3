@@ -48,3 +48,4 @@ while money > 0:
         print(f"💸 You lost!{bet}\n")
 
 print("Game over! final money count:", money)
+
