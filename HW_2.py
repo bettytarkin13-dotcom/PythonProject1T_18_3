@@ -11,6 +11,7 @@ def safe_code():
             index+=1
             print("correct!")
         else:
+            index=0
             print("incorrect!start over..")
 
     print("safe unlocked!")
